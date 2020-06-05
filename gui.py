@@ -64,10 +64,10 @@ class MainWindow( QMainWindow ):
         self.lout = QGridLayout( self.main_wid )
 
         #Add widgets to layout.
+        self.lout.addWidget( self.ld_model )
         self.lout.addWidget( self.browse )
         self.lout.addWidget( self.lab_im )
         self.lout.addWidget( self.set_image )
-        self.lout.addWidget( self.ld_model )
 
         #Create stacked widget.
         self.stack_wid = QStackedWidget( )
